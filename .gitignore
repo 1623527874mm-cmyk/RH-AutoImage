@@ -1,0 +1,59 @@
+# ── 依赖与构建产物（本扩展无构建步骤，仅防止误提交）──
+node_modules/
+dist/
+build/
+*.tgz
+*.zip
+
+# ── 本地测试 / 覆盖率产物 ──
+coverage/
+*.lcov
+.nyc_output/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── 凭证与私有设置（绝不能进仓库）──
+secrets.json
+*secret*.json
+*credential*.json
+.env
+.env.*
+!.env.example
+config.yaml
+settings.json
+extension_settings*.json
+
+# ── 酒馆数据：聊天、角色卡、世界书、图片、备份 ──
+chats/
+characters/
+worlds/
+groups/
+group chats/
+backups/
+_user/
+data/
+user/
+thumbnails/
+vectors/
+assets/
+_uploads/
+_storage/
+_cache/
+
+# ── 运行时日志 ──
+logs/
+*.log
+
+# ── 编辑器 / 操作系统 ──
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── 个人草稿（本地交接笔记不随扩展发布）──
+*.local.md
+notes-*.md
+scratch/
+tmp/

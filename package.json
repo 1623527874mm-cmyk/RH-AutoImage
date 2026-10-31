@@ -1,0 +1,10 @@
+{
+    "name": "st-rh-autoimage",
+    "version": "0.4.0",
+    "private": true,
+    "type": "module",
+    "description": "SillyTavern extension: 按 AI 回复楼层定时用 RunningHub 生图",
+    "scripts": {
+        "test": "node --test test/core.test.js test/api.test.js test/events.test.js test/settings.test.js test/jobs.test.js test/errors.test.js test/regression.test.js"
+    }
+}

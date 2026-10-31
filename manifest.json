@@ -1,0 +1,12 @@
+{
+    "display_name": "RH 定时生图",
+    "loading_order": 120,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "ny",
+    "version": "0.4.0",
+    "minimum_client_version": "1.18.0",
+    "auto_update": false
+}

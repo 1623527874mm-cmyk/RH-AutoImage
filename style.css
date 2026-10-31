@@ -1,0 +1,116 @@
+/* RH 定时生图 扩展样式 —— 只作用于本扩展自己的元素，避免影响酒馆原生 UI */
+
+#rh_autoimage_drawer .rh-status-line {
+    margin: 6px 0 10px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+#rh_autoimage_drawer .rh-status-line.rh-ok {
+    background: rgba(60, 160, 90, 0.18);
+}
+
+#rh_autoimage_drawer .rh-status-line.rh-warn {
+    background: rgba(220, 150, 40, 0.2);
+}
+
+#rh_autoimage_drawer .rh-status-line.rh-off {
+    opacity: 0.7;
+}
+
+#rh_autoimage_drawer hr {
+    margin: 12px 0 8px;
+    border: none;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#rh_autoimage_drawer label {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.88em;
+    opacity: 0.85;
+}
+
+#rh_autoimage_drawer .rh-row {
+    display: flex;
+    gap: 8px;
+}
+
+#rh_autoimage_drawer .rh-row > div {
+    flex: 1;
+    min-width: 0;
+}
+
+#rh_autoimage_drawer .rh-btn-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+#rh_autoimage_drawer .rh-hint {
+    margin-top: 10px;
+    font-size: 0.8em;
+    opacity: 0.65;
+    line-height: 1.4;
+}
+
+#rh_autoimage_drawer .rh-version {
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+#rh_autoimage_drawer .rh-busy {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* 楼层内的任务状态条 */
+.mes .rh-job-status {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.78em;
+    line-height: 1.6;
+    opacity: 0.85;
+    background: rgba(0, 0, 0, 0.07);
+    max-width: 100%;
+    word-break: break-word;
+}
+
+.mes .rh-job-status.rh-job-prompting,
+.mes .rh-job-status.rh-job-queued,
+.mes .rh-job-status.rh-job-rendering,
+.mes .rh-job-status.rh-job-pending {
+    background: rgba(70, 130, 200, 0.18);
+}
+
+.mes .rh-job-status.rh-job-success {
+    background: rgba(60, 160, 90, 0.18);
+}
+
+.mes .rh-job-status.rh-job-failed,
+.mes .rh-job-status.rh-job-skipped {
+    background: rgba(200, 70, 70, 0.18);
+}
+
+/* 旧版前缀迁移提示：只在检测到旧值时才显示 */
+.rh-legacy {
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-left: 3px solid #c9a227;
+    background: rgba(201, 162, 39, 0.10);
+    border-radius: 4px;
+}
+
+.rh-legacy textarea[readonly] {
+    opacity: 0.85;
+}
+
+.mes .rh-job-status.rh-job-discarded {
+    background: rgba(140, 140, 140, 0.18);
+}
